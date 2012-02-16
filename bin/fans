@@ -1,0 +1,5 @@
+#!/bin/bash
+
+[ -z "$1" ] && URL='http://www.facebook.com/zongleruv.slabikar?ref=mf&_fb_noscript=1' || URL="$1?ref=mf&_fb_noscript=1"
+ 
+wget -qO - --referer=http://facebook.com --user-agent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.3) Gecko/2008092416 Firefox/5.0" --header="Accept-Language: en-us,en;q=0.5" "$URL" | egrep '<span class="uiNumberGiant fsxxl fwb' | sed "s/<\/div>/<\/div>\n/g" | grep 'uiNumberGiant fsxxl fwb' | head -1 | sed 's/.*<span class="uiNumberGiant fsxxl fwb">\([^<]*\).*/\1/1'

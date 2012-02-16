@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=google-chrome --user-data-dir=/home/petr/.google-chrome-proxy --proxy-pac-url=http://wpad.example.cz/wpad.dat
+Icon=/opt/google/chrome/product_logo_16.png
+StartupNotify=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Chrome proxy
+Comment=Google chrome - proxy

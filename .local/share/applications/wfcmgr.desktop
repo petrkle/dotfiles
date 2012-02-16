@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix
+Categories=Application;Network;X-Mymenu
+Icon=/usr/lib/ICAClient/icons/manager.xpm
+TryExec=/home/petr/bin/citrix.sh
+Exec=/home/petr/bin/citrix.sh

@@ -1,0 +1,76 @@
+set nocp "nekompalita se starými vi
+filetype plugin indent on "odsazování podle typu souboru
+set backspace=indent,eol,start "backspace ma¾e v¹e
+set background=dark " lep¹í èitelnost na tmavém pozadí
+"let g:solarized_force_dark = 1
+"let g:solarized_termcolors=256
+"colorscheme solarized
+set display=lastline "zobrazovat alespoò èást øádku místo zavináèù
+set ignorecase "case insensitive vyhledávání
+set smartcase "vypne case insensitive pøi hledání slova s velkými písmeny
+set incsearch "pøi hledání hned zobrazuje prvnì nálezené
+set nojoinspaces "nevkládá dvì mezery za vìtu pøi spojování øádkù
+set number "èíslování øádkù
+set ruler "zobrazení pozice v dokumentu 
+set scrolloff=4 "poèet øádkù které mají být vidìt pøed a za kurzorem
+set showbreak=\\ "oznaèení zalomených øádkù
+set showcmd "zobrazuje zadávaný pøikaz
+set showmatch "zapí¹ete-li pravou závorku, uká¾e vám její protìj¹ek
+set showmode "zobrazuje --INSERT--
+set tabstop=2 "velikost tab
+set shiftwidth=2 "velikost odsazování
+set title "zobrazování informací v titulku okna
+set viminfo='50,r/mnt,n~/.vim/viminfo "ukládání historie 
+set wildignore=*~,*.bak "pøi doplòování bude ignorováno
+set wildmenu "pøi <Tab> zobrazí mo¾nosti
+set wildmode=longest,list "zpùsob doplòování 
+set wrap "zalamování øádkù
+set spelllang=cs
+set spell
+set fileencodings=utf-8,iso-8859-2,windows-1250
+
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
+
+syntax on "zvýraznìní syntaxe
+let html_number_lines = 0 "nastavení 2html
+let html_use_css = 1 "nastavení 2html
+"colorscheme moje "vlastní barvièky
+set directory=~/tmp "doèasné soubory do tmp a ne do aktuálního adresáøe
+
+"klávesové zkratky
+imap <C-d> <Del>
+imap <C-a> <C-b>
+cmap <C-d> <Del>
+cmap <C-a> <C-b>
+
+"trocha klávesových zkratek pro HTML
+let maplocalleader = "," 
+imap <LocalLeader>< &lt;
+imap <LocalLeader>> &gt;
+imap <LocalLeader>& &amp;
+imap <LocalLeader>n &nbsp;
+imap <C-t> <></><Esc>5hdiwp3lpT>i
+imap <LocalLeader>tab <table><CR><tr><CR><td></td><CR></tr><CR></table>
+
+function! HTML_anchor()
+let cil = input("Cíl odkazu: ")
+let popisek = input("Popisek odkazu: ")
+execute "normal a<a href=\"".cil."\" title=\"".popisek."\"></a>"
+execute "normal 3h"
+:startinsert
+endfunction
+
+imap <LocalLeader>a <Esc>:call HTML_anchor()<CR>
+
+augroup crypto
+	au!
+	autocmd BufReadPre,FileReadPre		/mnt/crypto/* set viminfo=
+	autocmd BufReadPre,FileReadPre		/mnt/crypto/* set noswapfile
+augroup END

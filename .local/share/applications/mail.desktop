@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=claws-mail --alternate-config-dir /home/petr/.claws-mail.petr
+Icon=claws-mail
+StartupNotify=false
+Categories=X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=petr
+Comment=Claws mail

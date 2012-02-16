@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Chrome
+Exec=/opt/google/chrome/chrome %U
+Terminal=false
+Icon=/opt/google/chrome/product_logo_16.png
+Type=Application
+Categories=Application;Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;

@@ -1,0 +1,2 @@
+initialZoom page
+urlCommand 'google-chrome "%s"'

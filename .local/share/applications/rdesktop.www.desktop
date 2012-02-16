@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=/home/petr/bin/rd.sh www
+Icon=video-display
+StartupNotify=false
+Categories=X-Mymenu;
+OnlyShowIn=XFCE
+Name=www
+Comment=rdesktop to www

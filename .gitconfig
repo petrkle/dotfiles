@@ -1,0 +1,7 @@
+[user]
+	name = Petr
+	email = petr@kle.cz
+[core]
+	editor = vim -u ~/.vim/vimrc
+[color]
+	ui = true

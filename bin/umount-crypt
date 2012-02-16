@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sudo -u root umount /mnt/crypto/
+
+sudo -u root /sbin/cryptsetup -v luksClose pekcrytptofs

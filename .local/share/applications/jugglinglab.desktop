@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=java -jar /usr/local/jugglinglab/bin/JugglingLab.jar
+Icon=/usr/local/jugglinglab/bin/zdroj/source/resources_osx/Juggling_Lab_32x32x32.png
+StartupNotify=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Juggling Lab
+Comment=Juggling Lab 0.6

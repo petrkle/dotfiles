@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=firefox
+Icon=/usr/local/firefox/chrome/icons/default/default16.png
+StartupNotify=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Firefox
+Comment=Firefox

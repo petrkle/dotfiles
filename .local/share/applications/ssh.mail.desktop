@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=/usr/bin/xterm -e ssh -p 7743 -i /home/petr/crypto/pekkey_id_rsa pek@mail
+Icon=xfce-terminal
+StartupNotify=false
+Categories=X-Mymenu;
+OnlyShowIn=XFCE
+Name=mail
+Comment=SSH to mail
