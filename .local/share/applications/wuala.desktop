@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=/usr/local/wuala/wuala
+Icon=/usr/share/icons/wuala.png
+StartupNotify=false
+Categories=Utility;
+OnlyShowIn=XFCE;
+Name=Wuala
+Comment=Wuala

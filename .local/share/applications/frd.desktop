@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=/usr/local/FreeRapid-0.86u1/frd.sh
+Icon=/usr/local/FreeRapid-0.86u1/frd.png
+StartupNotify=false
+Categories=Utility;
+OnlyShowIn=XFCE;
+Name=Free Rapid Downloader
+Comment=Free Rapid Downloader
