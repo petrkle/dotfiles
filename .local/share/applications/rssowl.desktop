@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Exec=/usr/local/rssowl/RSSOwl
+Icon=/usr/local/rssowl/icon.xpm
+StartupNotify=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=RSSOwl
+Comment=RSSOwl
