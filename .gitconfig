@@ -1,7 +1,14 @@
 [user]
 	name = Petr
 	email = petr@kle.cz
+	signingkey = C2163D7F
 [core]
 	editor = vim -u ~/.vim/vimrc
 [color]
 	ui = true
+
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d\" --graph --date=short
