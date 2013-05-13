@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Data::GUID::Any 'guid_as_string';
+ 
+print guid_as_string()."\n";
