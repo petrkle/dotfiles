@@ -30,6 +30,7 @@ export MANPATH=$MANPATH:/usr/local/share/man
 export LESSCHARSET=UTF-8
 alias rdesktop="rdesktop -g 1024x768"
 alias asciidoc='asciidoc -b xhtml11'
+alias pyradio='pyradio -s $HOME/.pyradio.stations'
 export PAGER=less
 export LESS="-erX"
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"

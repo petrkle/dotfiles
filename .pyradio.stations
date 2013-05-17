@@ -1,0 +1,8 @@
+# Czech stations for pyradio
+Radio1, http://icecast1.play.cz:443/radio1.mp3
+Radio Beat, http://www.play.cz/radio/beat128.ogg.m3u
+Radio Hey, http://mp3stream4.abradio.cz:8000/hey128.mp3
+Radiozurnal, http://radio.cesnet.cz/cgi-bin/cro1-256-ogg.pls
+CRo 2, http://radio.cesnet.cz/cgi-bin/cro2-256-ogg.pls
+CRo Vltava, http://radio.cesnet.cz/cgi-bin/cro3-256-ogg.pls
+CRo Radio Wave, http://amp.cesnet.cz:8000/cro-radio-wave-256.ogg.m3u
