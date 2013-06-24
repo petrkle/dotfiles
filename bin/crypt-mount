@@ -1,6 +1,6 @@
 #!/bin/sh
 
 
-sudo -u root /sbin/cryptsetup -v luksOpen /dev/loop5 pekcrytptofs
+sudo -u root /sbin/cryptsetup -v luksOpen /dev/sdb2 pekcrytptofs
 
 sudo -u root mount /dev/mapper/pekcrytptofs /mnt/crypto/
