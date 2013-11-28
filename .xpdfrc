@@ -1,2 +1,2 @@
 initialZoom page
-urlCommand 'google-chrome "%s"'
+urlCommand 'google-chrome-stable "%s"'
