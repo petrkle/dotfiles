@@ -40,3 +40,4 @@ alias umount='sudo umount'
 export GPGKEY=748DDDC5
 export GOPATH="$HOME/src/go"
 alias pyradio='pyradio -s $HOME/.pyradio.stations'
+stty -ixon
