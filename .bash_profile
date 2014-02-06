@@ -1,1 +1,5 @@
-source $HOME/.bashrc
+[ -z "$PS1" ] && return
+
+if [ -f ~/.bashrc ]; then
+	  . ~/.bashrc
+fi

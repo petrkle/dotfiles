@@ -11,7 +11,7 @@ alias bc='bc -lq'
 alias ll='ls -lp'
 alias vim='vim -u ~/.vim/vimrc' 
 alias xfig="xfig -nosplash"
-PROMPT_COMMAND='history -a'
+export PROMPT_COMMAND="history -a; history -n"
 shopt -s histappend
 complete -A directory cd
 complete -A command man
@@ -19,7 +19,8 @@ complete -A file -X '!*.ps' gv
 export HOST=`echo $HOSTNAME | cut -d . -f 1`
 export PS1='[\u@\h \W]\$ '
 export HISTSIZE=10000
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoreboth
+export HISTTIMEFORMAT='%F %T '
 export EDITOR='vim -u ~/.vim/vimrc' 
 export VISUAL=$EDITOR
 export SVN_EDITOR=$EDITOR
