@@ -19,6 +19,7 @@ complete -A file -X '!*.ps' gv
 export HOST=`echo $HOSTNAME | cut -d . -f 1`
 export PS1='[\u@\h \W]\$ '
 export HISTSIZE=10000
+export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT='%F %T '
 export EDITOR='vim -u ~/.vim/vimrc' 
