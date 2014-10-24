@@ -13,10 +13,19 @@
 	co = checkout
 	st = status
 	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d\" --graph --date=short
+	hist = log --pretty=format:\"%h %ad | %s%d\" --graph --date=relative
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
 [push]
 	default = simple
 
 [svn]
 	rmdir = true
+
+[log]
+	date = local
+
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
