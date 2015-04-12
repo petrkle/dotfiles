@@ -43,3 +43,6 @@ export GPGKEY=748DDDC5
 export GOPATH="$HOME/src/go"
 alias pyradio='pyradio -s $HOME/.pyradio.stations'
 stty -ixon
+export PERL_LWP_SSL_CA_PATH=/etc/ssl/certs
+[ -z "$PS1" ] && return
+[ -z "$XTERM_VERSION" ] && screen -dRR
