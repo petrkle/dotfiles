@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/pek/Zend-Libraries/library/Kohut/SNMP'
-let g:netrw_dirhist_2='/mnt/www/data_www/intranet.dek.cz/marketing/mailing/config'
-let g:netrw_dirhist_3='/mnt/www/data_www/vytapenistaveb.cz'
-let g:netrw_dirhist_4='/home/pek/sysadmin/users'
-let g:netrw_dirhist_5='/mnt/tmp/install/source/program/thunderbird/9/doplnky/slovnik-cz'
-let g:netrw_dirhist_6='/home/pek/download/pdfsam-2.2.1e-out-src/pdfsam-console/ant'
-let g:netrw_dirhist_7='/home/pek/tmp/ccleaner/ccleaner'
