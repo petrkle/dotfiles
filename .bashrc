@@ -11,6 +11,7 @@ alias bc='bc -lq'
 alias ll='ls -lp'
 alias vim='vim -u ~/.vim/vimrc' 
 alias xfig="xfig -nosplash"
+alias myip='dig +short @resolver1.opendns.com myip.opendns.com a'
 export PROMPT_COMMAND="history -a; history -n"
 shopt -s histappend
 complete -A directory cd
