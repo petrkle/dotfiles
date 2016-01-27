@@ -1,7 +1,7 @@
 alias mf='mount /mnt/memory && crypt-mount'
 alias uf='umount /mnt/memory ; crypt-umount'
-alias lo="/opt/libreoffice4.1/program/soffice.bin"
-alias mkpasswd="mkpasswd -s 0 -l 6"
+alias lo="/opt/libreoffice5.0/program/soffice.bin"
+alias mkpasswd="mkpasswd -s 0 -l 15"
 alias cal='cal -m3'
 alias cls='clear'
 alias sp="mplayer -vf scale=120:160 -ao null"
@@ -45,5 +45,6 @@ export GOPATH="$HOME/src/go"
 alias pyradio='pyradio -s $HOME/.pyradio.stations'
 stty -ixon
 export PERL_LWP_SSL_CA_PATH=/etc/ssl/certs
+alias vnc='vncviewer -passwd /home/petr/crypto/vncpasswd -LowColorLevel 2'
 [ -z "$PS1" ] && return
 [ -z "$XTERM_VERSION" ] && screen -dRR
