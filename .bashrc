@@ -43,6 +43,7 @@ alias umount='sudo umount'
 export GPGKEY=748DDDC5
 export GOPATH="$HOME/src/go"
 alias pyradio='pyradio -s $HOME/.pyradio.stations'
+alias pocasi='curl http://wttr.in/'
 stty -ixon
 export PERL_LWP_SSL_CA_PATH=/etc/ssl/certs
 alias vnc='vncviewer -passwd /home/petr/crypto/vncpasswd -LowColorLevel 2'
