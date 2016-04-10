@@ -1,7 +1,7 @@
 [user]
 	name = Petr
 	email = petr@kle.cz
-	signingkey = C2163D7F
+	signingkey = 9CF774B9
 
 [core]
 	editor = vim -u ~/.vim/vimrc
