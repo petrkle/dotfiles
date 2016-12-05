@@ -15,6 +15,7 @@ xterm*fontMenu*background: orange
 xterm*fontMenu*foreground: black
 xterm*VT100*cursorColor: yellow
 XTerm.*.backarrowKey: false
+XTerm*locale: true
 
 gnuplot*background: white
 urxvt.font:             -misc-fixed-*-r-normal--*-*-*-*-*-*-iso10646-1
