@@ -36,5 +36,5 @@ terminfo xterm hs@:cs=\E[%i%p1%d;%p2%dr:im=\E[4h:ei=\E[4l
 vbell off 
 setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 defscrollback 10000
-termcapinfo xterm*|rxvt* ti@:te@
+termcapinfo xterm*|rxvt*  te=\E[?1049l:ti=\E[?1049h:
 termcapinfo xterm*|rxvt* OL=10000
