@@ -48,4 +48,4 @@ alias pocasi='curl http://wttr.in/'
 export PERL_LWP_SSL_CA_PATH=/etc/ssl/certs
 alias vnc='vncviewer -passwd /home/petr/crypto/vncpasswd -LowColorLevel 2'
 [ -z "$PS1" ] && return
-[ -z "$XTERM_VERSION" ] && screen -dRR
+[ -z "$STY" -a -z "$XTERM_VERSION" ] && screen -dRR
