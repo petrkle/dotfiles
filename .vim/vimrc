@@ -1,30 +1,30 @@
-set nocp "nekompalita se starımi vi
-filetype plugin indent on "odsazování podle typu souboru
-set backspace=indent,eol,start "backspace ma¾e v¹e
-set background=dark " lep¹í èitelnost na tmavém pozadí
-"let g:solarized_force_dark = 1
-"let g:solarized_termcolors=256
-"colorscheme solarized
-set display=lastline "zobrazovat alespoò èást øádku místo zavináèù
-set ignorecase "case insensitive vyhledávání
-set smartcase "vypne case insensitive pøi hledání slova s velkımi písmeny
-set incsearch "pøi hledání hned zobrazuje prvnì nálezené
-set nojoinspaces "nevkládá dvì mezery za vìtu pøi spojování øádkù
-set number "èíslování øádkù
-set ruler "zobrazení pozice v dokumentu 
-set scrolloff=4 "poèet øádkù které mají bıt vidìt pøed a za kurzorem
-set showbreak=\\ "oznaèení zalomenıch øádkù
-set showcmd "zobrazuje zadávanı pøikaz
-set showmatch "zapí¹ete-li pravou závorku, uká¾e vám její protìj¹ek
+set nocp "nekompalita se starÃ½mi vi
+filetype plugin indent on "odsazovÃ¡nÃ­ podle typu souboru
+set backspace=indent,eol,start "backspace maÅ¾e vÅ¡e
+set background=dark " lepÅ¡Ã­ Äitelnost na tmavÃ©m pozadÃ­
+set t_Co=256
+syntax on "zvÃ½raznÄ›nÃ­ syntaxe
+colorscheme calmar256-dark
+set display=lastline "zobrazovat alespoÅˆ ÄÃ¡st Å™Ã¡dku mÃ­sto zavinÃ¡ÄÅ¯
+set ignorecase "case insensitive vyhledÃ¡vÃ¡nÃ­
+set smartcase "vypne case insensitive pÅ™i hledÃ¡nÃ­ slova s velkÃ½mi pÃ­smeny
+set incsearch "pÅ™i hledÃ¡nÃ­ hned zobrazuje prvnÄ› nÃ¡lezenÃ©
+set nojoinspaces "nevklÃ¡dÃ¡ dvÄ› mezery za vÄ›tu pÅ™i spojovÃ¡nÃ­ Å™Ã¡dkÅ¯
+set number "ÄÃ­slovÃ¡nÃ­ Å™Ã¡dkÅ¯
+set ruler "zobrazenÃ­ pozice v dokumentu 
+set scrolloff=4 "poÄet Å™Ã¡dkÅ¯ kterÃ© majÃ­ bÃ½t vidÄ›t pÅ™ed a za kurzorem
+set showbreak=\\ "oznaÄenÃ­ zalomenÃ½ch Å™Ã¡dkÅ¯
+set showcmd "zobrazuje zadÃ¡vanÃ½ pÅ™ikaz
+set showmatch "zapÃ­Å¡ete-li pravou zÃ¡vorku, ukÃ¡Å¾e vÃ¡m jejÃ­ protÄ›jÅ¡ek
 set showmode "zobrazuje --INSERT--
 set tabstop=2 "velikost tab
-set shiftwidth=2 "velikost odsazování
-set title "zobrazování informací v titulku okna
-set viminfo='50,r/mnt,n~/.vim/viminfo "ukládání historie 
-set wildignore=*~,*.bak "pøi doplòování bude ignorováno
-set wildmenu "pøi <Tab> zobrazí mo¾nosti
-set wildmode=longest,list "zpùsob doplòování 
-set wrap "zalamování øádkù
+set shiftwidth=2 "velikost odsazovÃ¡nÃ­
+set title "zobrazovÃ¡nÃ­ informacÃ­ v titulku okna
+set viminfo='50,r/mnt,n~/.vim/viminfo "uklÃ¡dÃ¡nÃ­ historie 
+set wildignore=*~,*.bak "pÅ™i doplÅˆovÃ¡nÃ­ bude ignorovÃ¡no
+set wildmenu "pÅ™i <Tab> zobrazÃ­ moÅ¾nosti
+set wildmode=longest,list "zpÅ¯sob doplÅˆovÃ¡nÃ­ 
+set wrap "zalamovÃ¡nÃ­ Å™Ã¡dkÅ¯
 set spelllang=cs
 set spell
 set fileencodings=utf-8,iso-8859-2,windows-1250
@@ -44,19 +44,17 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
-syntax on "zvıraznìní syntaxe
-let html_number_lines = 0 "nastavení 2html
-let html_use_css = 1 "nastavení 2html
-"colorscheme moje "vlastní barvièky
-set directory=~/tmp "doèasné soubory do tmp a ne do aktuálního adresáøe
+let html_number_lines = 0 "nastavenÃ­ 2html
+let html_use_css = 1 "nastavenÃ­ 2html
+set directory=~/tmp "doÄasnÃ© soubory do tmp a ne do aktuÃ¡lnÃ­ho adresÃ¡Å™e
 
-"klávesové zkratky
+"klÃ¡vesovÃ© zkratky
 imap <C-d> <Del>
 imap <C-a> <C-b>
 cmap <C-d> <Del>
 cmap <C-a> <C-b>
 
-"trocha klávesovıch zkratek pro HTML
+"trocha klÃ¡vesovÃ½ch zkratek pro HTML
 let maplocalleader = "," 
 imap <LocalLeader>< &lt;
 imap <LocalLeader>> &gt;
@@ -66,7 +64,7 @@ imap <C-t> <></><Esc>5hdiwp3lpT>i
 imap <LocalLeader>tab <table><CR><tr><CR><td></td><CR></tr><CR></table>
 
 function! HTML_anchor()
-let cil = input("Cíl odkazu: ")
+let cil = input("CÃ­l odkazu: ")
 let popisek = input("Popisek odkazu: ")
 execute "normal a<a href=\"".cil."\" title=\"".popisek."\"></a>"
 execute "normal 3h"
