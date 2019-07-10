@@ -1,5 +1,3 @@
-alias mf='mount /mnt/memory && crypt-mount'
-alias uf='umount /mnt/memory ; crypt-umount'
 alias mkpasswd="mkpasswd -s 0 -l 15"
 alias cls='clear'
 alias sp="mplayer -vf scale=120:160 -ao null"
@@ -37,6 +35,12 @@ export LESS="-erX"
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 export JAVA_HOME=/usr/lib64/java
 export ANDROID_HOME=~/android-sdk-linux
+function tping() {
+    ping $@ | while read pong; do
+        echo "$(/bin/date +"%T"): $pong";
+    done
+}
+alias tping=tping
 function mwin {
   sudo /bin/mount -t cifs -o iocharset=utf8,uid=petr,gid=users,rw,nobrl,credentials=$HOME/.windowsadmin //$1/$2\$ /mnt/tmp/
 }
