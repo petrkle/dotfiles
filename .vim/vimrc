@@ -20,6 +20,7 @@ set showmode "zobrazuje --INSERT--
 set tabstop=2 "velikost tab
 set shiftwidth=2 "velikost odsazování
 set title "zobrazování informací v titulku okna
+set titleold=
 set viminfo='50,r/mnt,n~/.vim/viminfo "ukládání historie 
 set wildignore=*~,*.bak "při doplňování bude ignorováno
 set wildmenu "při <Tab> zobrazí možnosti
