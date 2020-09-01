@@ -1,7 +1,8 @@
-xterm*font: -*-fixed-medium-*-*-*-*-140-*-*-*-*-iso10646-1
-!xterm*font: -misc-*-bold-r-*-*-*-140-*-*-*-*-iso10646-1
+Xcursor.theme: aero
+;xterm*font: -*-fixed-medium-*-*-*-*-140-*-*-*-*-iso10646-1
 xterm*boldMode: false
-xterm*VT100*geometry: 130x50+20+20
+;xterm*VT100*geometry: 170x60
+xterm*VT100*geometry: 170x50
 xterm*background: black
 xterm*foreground: green
 xterm*scrollBar: false
@@ -14,41 +15,16 @@ xterm*vtMenu*foreground: black
 xterm*fontMenu*background: orange
 xterm*fontMenu*foreground: black
 xterm*VT100*cursorColor: yellow
+xterm*faceName: JetBrains Mono
+xterm*faceSize: 12
+xterm*renderFont: true
+xterm*termName: xterm-256color
 XTerm.*.backarrowKey: false
-XTerm*locale: true
 
 gnuplot*background: white
-urxvt.font:             -misc-fixed-*-r-normal--*-*-*-*-*-*-iso10646-1
-urxvt.boldFont:         -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso8859-15
-urxvt.italicFont:       xft:Bitstream Vera Sans Mono:italic:autohint=true
-urxvt.boldItalicFont:   xft:Bitstream Vera Sans Mono:bold:italic:autohint=true
-urxvt.background: black
-urxvt.foreground: green
-urxvt*geometry: 130x50+20+20
-urxvt*scrollBar: false
-URxvt.cursorBlink: true
-URxvt*title: Terminál
-URxvt*cursorColor: yellow
-URxvt*iconFile: /usr/share/icons/Tango/32x32/apps/xfce-terminal.png
-URxvt*fading: 40
 
 *font: -adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-iso8859-2
 *background: grey
 *foreground: black
 
-URxvt*color0: #000000
-URxvt*color1: #A80000
-URxvt*color2: #00A800
-URxvt*color3: #A85400
-URxvt*color4: #0000A8
-URxvt*color5: #A800A8
-URxvt*color6: #00A8A8
-URxvt*color7: #A8A8A8
-URxvt*color8: #545054
-URxvt*color9: #F85450
-URxvt*color10: #50FC50
-URxvt*color11: #F2FC50
-URxvt*color12: #5054F8
-URxvt*color13: #F854F8
-URxvt*color14: #50FCF8
-URxvt*color15: #F8FCF8
+xpdf.geometry: -0+0
